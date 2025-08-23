@@ -1,6 +1,8 @@
 import { Button } from '@/components/ui/button';
 import { Card, CardContent } from '@/components/ui/card';
 import { Star, Clock, Award } from 'lucide-react';
+import { HotelDescription } from '@/components/HotelDescription';
+import { FeedbackSection } from '@/components/FeedbackSection';
 import heroImage from '@/assets/hero-restaurant.jpg';
 import dishSalmon from '@/assets/dish-salmon.jpg';
 import dishBeef from '@/assets/dish-beef.jpg';
@@ -135,6 +137,12 @@ export const HomePage = ({ onNavigate, onAddToCart }: HomePageProps) => {
           </div>
         </div>
       </section>
+
+      {/* Hotel Description */}
+      <HotelDescription />
+
+      {/* Feedback Section */}
+      <FeedbackSection />
     </div>
   );
 };
